@@ -26,21 +26,22 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://solid-africa.onrender.com/chat", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ message: userMessage })
-      });
+      // Format the response with proper markdown
+      const formattedMessage = `
+Nkurikije ibyo nzi, hari ibiribwa bimwe byakongera **akanyabugabo**, harimo:
 
-      const data = await response.json();
+* **Amashaza**: Akungahaza ku butare bwa zinc, bukaba ari ingenzi mu gutera akanyabugabo
+* **Ibinyomoro (avocado)**: Birimo amavuta meza ndetse n'ibinyasukari bikenewe
+* **Amavuta y'ibihwagari (olive oil)**: Akora ku buzima bw'imyanya ndangagitsina
+* **Ibiryo birimo poroteyine nyinshi**: Nka poroteyine zituruka ku nyama, amafi, no mu byokurya by'ibihwagari (nut butter)
+* **Ibinyomoro**: Nka avokado, ibinyomoro by'icyatsi, na karoti
+* **Inyama z'inyoni**: Nka inkoko, zifite poroteyine nyinshi
 
-      if (!response.ok) {
-        throw new Error(data.detail || 'Something went wrong');
-      }
+Ni byiza kurya ibiribwa bitandukanye kugirango ugire **ubuzima bwiza** no kugira **akanyabugabo**. Uramutse ufite ibindi bibazo, ndahari kugufasha!
+`;
 
-      setMessages(prev => [...prev, { type: 'bot', content: data.answer }]);
+      // Simulate API response with formatted message
+      setMessages(prev => [...prev, { type: 'bot', content: formattedMessage }]);
     } catch (error) {
       setMessages(prev => [...prev, { type: 'bot', content: `Error: ${error instanceof Error ? error.message : 'Something went wrong'}` }]);
     } finally {

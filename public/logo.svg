@@ -1,0 +1,7 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0,0)">
+    <path fill="#9B1C1C" d="M150 50 C 150 50, 220 80, 250 120 C 280 160, 280 200, 250 240 C 220 280, 150 290, 80 240 C 50 200, 50 160, 80 120 C 110 80, 150 50, 150 50 Z"/>
+    <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="#9B1C1C" style="font-size: 48px; font-weight: bold;">SOLID</text>
+    <text x="50%" y="85%" dominant-baseline="middle" text-anchor="middle" fill="#9B1C1C" style="font-size: 32px;">AFRICA</text>
+  </g>
+</svg>

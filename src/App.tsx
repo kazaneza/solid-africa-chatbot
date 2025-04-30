@@ -28,7 +28,7 @@ function App() {
     try {
       // Format the response with proper markdown
       const formattedMessage = `
-Nkurikije ibyo nzi, hari ibiribwa bimwe byakongera **akanyabugabo**, harimo:
+Nkurikije ibyo nzi, hari ibiribwa bimwe byakongera **imbaraga**, harimo:
 
 * **Amashaza**: Akungahaza ku butare bwa zinc, bukaba ari ingenzi mu gutera akanyabugabo
 * **Ibinyomoro (avocado)**: Birimo amavuta meza ndetse n'ibinyasukari bikenewe
